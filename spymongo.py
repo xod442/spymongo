@@ -44,9 +44,7 @@ logging.basicConfig()
 
 # Create client connector
 
-client = MongoClient('db:mongo', 27017)
-# client = MongoClient('172.20.0.2:27017')
-# client = MongoClient('localhost',27017)
+client = MongoClient('mongo', 27017)
 
 # Define database
 db = client.pov2
@@ -67,19 +65,20 @@ def callback(ch, method, properties, body):
 
     if resource['category'] == 'ethernet-networks':
       vlans.insert(resource)
-      print 'Record inserted: vlans'
+      print ('Record inserted: vlans')
+      print (resource)
 
     # Wirte network sets update
 
     if resource['category'] == 'network-sets':
       netsets.insert(resource)
-      print 'Record inserted: netsets'
+      print ('Record inserted: netsets')
 
     # Write logical interconnect group update
 
     if resource['category'] == 'logical-interconnect-groups':
       ligs.insert(resource)
-      print 'Record inserted: ligs'
+      print ('Record inserted: ligs')
 
 
 

@@ -34,11 +34,7 @@ Script reads state change messages from OneView and builds local mongo databases
 import pymongo
 from pymongo import MongoClient
 
-
-
-client = MongoClient('db:mongo', 27017)
-# client = MongoClient('172.20.0.2:27017')
-# client = MongoClient('localhost',27017)
+client = MongoClient('mongo', 27017)
 
 # Define database
 db = client.pov3

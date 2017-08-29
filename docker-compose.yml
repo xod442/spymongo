@@ -3,11 +3,7 @@ services:
   reader:
     build: .
     tty: true
-    volumes:
-      - /opt/scmb:/opt/scmb
-    links:
-      - db:mongodb
-    container_name: scmb_reader
+    container_name: spymongo
   db:
-    image: mongo:3.0.2
-    container_name: scmb_reader_db
+    image: mongo:latest
+    container_name: spy-db

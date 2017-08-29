@@ -11,8 +11,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     make \
     gcc \
-    python3-dev \
-    mongodb
+    python3-dev 
 
 ## make a local directory
 RUN mkdir /opt/scmb
@@ -27,4 +26,5 @@ ADD . .
 RUN pip3 install -r requirements.txt
 
 # start the app server
+CMD chmod +x spymongo.py
 CMD python ./spymongo.py 10.1.9.175
