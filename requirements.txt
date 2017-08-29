@@ -1,0 +1,4 @@
+hpOneView
+pika
+pyopenssl
+future >= 0.15.2
