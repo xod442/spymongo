@@ -48,37 +48,204 @@ ligs = db.lig
 
 r = {u'status': u'OK', u'category': u'ethernet-networks', u'ethernetNetworkType': u'Tagged', u'name': u'dev77', u'created': u'2017-08-28T20:14:47.807Z', u'description': None, u'uri': u'/rest/ethernet-networks/a8e8f284-e8ba-464f-8641-4a5ab161f677', u'state': u'Active', u'vlanId': 77, u'modified': u'2017-08-28T20:14:47.808Z', u'fabricUri': u'/rest/fabrics/a4ab21c2-b121-4801-aacf-746b5576bb1a', u'eTag': u'1ef7e926-4d9a-416e-828d-58231ccae399', u'scopeUris': [], u'purpose': u'General', u'subnetUri': None, u'connectionTemplateUri': u'/rest/connection-templates/76a66aaa-35af-42ca-ad21-c660327357fd', '_id': ObjectId('59a479dfc2f3f376df9cd136'), u'type': u'ethernet-networkV300', u'smartLink': False, u'privateNetwork': False}
 
-x = {"type":"ethernetnetworkV300",
-                 "ethernetNetworkType":"Tagged",
-                 "vlanId":99,
-                 "smartLink":False,
-                 "purpose":"General",
-                 "privateNetwork":False,
-                 "fabricUri":"/rest/fabrics/a4ab21c2-b121-4801-aacf-746b5576bb1a",
-                 "connectionTemplateUri":"/rest/connection-templates/602e4e7a-73a1-4873-80ec-acd61cccbdac",
-                 "subnetUri":'Null',
-                 "scopeUris":[],
-                 "name":"x-22",
-                 "state":"Active",
-                 "description":'Null',
-                 "status":"OK",
-                 "created":"2017-08-24T20:31:47.547Z",
-                 "eTag":"ef32609d-1a31-482b-806f-abd2f4ef8422",
-                 "modified":"2017-08-24T20:31:47.548Z",
-                 "category":"ethernet-networks",
-                 "uri":"/rest/ethernet-networks/14be9449-c56c-4412-a2ed-c06180e839db"}
+x = {
+        "type":"ethernetnetworkV300",
+         "ethernetNetworkType":"Tagged",
+         "vlanId":99,
+         "smartLink":False,
+         "purpose":"General",
+         "privateNetwork":False,
+         "fabricUri":"/rest/fabrics/a4ab21c2-b121-4801-aacf-746b5576bb1a",
+         "connectionTemplateUri":"/rest/connection-templates/602e4e7a-73a1-4873-80ec-acd61cccbdac",
+         "subnetUri":'Null',
+         "scopeUris":[],
+         "name":"x-22",
+         "state":"Active",
+         "description":'Null',
+         "status":"OK",
+         "created":"2017-08-24T20:31:47.547Z",
+         "eTag":"ef32609d-1a31-482b-806f-abd2f4ef8422",
+         "modified":"2017-08-24T20:31:47.548Z",
+         "category":"ethernet-networks",
+         "uri":"/rest/ethernet-networks/14be9449-c56c-4412-a2ed-c06180e839db"
+    }
 # This is what is returned as resource from logical interconnect group
 
-y = {"type":"logical-interconnect-groupV300","enclosureType":"SY12000","uplinkSets":[{"networkType":"Ethernet","ethernetNetworkType":"Tagged","lacpTimer":"Short","logicalPortConfigInfos":[{"logicalLocation":{"locationEntries":[{"relativeValue":76,"type":"Port"},{"relativeValue":3,"type":"Bay"},{"relativeValue":1,"type":"Enclosure"}]},"desiredSpeed":"Auto"},{"logicalLocation":{"locationEntries":[{"relativeValue":76,"type":"Port"},{"relativeValue":1,"type":"Enclosure"},{"relativeValue":6,"type":"Bay"}]},"desiredSpeed":"Auto"}],"networkUris":["/rest/ethernet-networks/dad6976e-cc10-4b4b-a181-d8a71b1126ff","/rest/ethernet-networks/14be9449-c56c-4412-a2ed-c06180e839db"],"reachability":'null',"primaryPort":'null',"nativeNetworkUri":'null',"mode":"Auto","name":"x-22-set-set"}],
+y = {
+"type":"logical-interconnect-groupV300",
+"enclosureType":"SY12000",
+"uplinkSets":
+            [
+            {
+            "networkType":"Ethernet",
+            "ethernetNetworkType":"Tagged",
+            "lacpTimer":"Short",
+            "logicalPortConfigInfos":
+            [
+            {
+                "logicalLocation":
+                            {
+                            "locationEntries":
+                                [
+                                {"relativeValue":76,"type":"Port"},
+                                {"relativeValue":3,"type":"Bay"},
+                                {"relativeValue":1,"type":"Enclosure"}
+                                ]
+                            },
+                            "desiredSpeed":"Auto"
+            },
+            {
+                "logicalLocation":
+                            {
+                            "locationEntries":
+                                [
+                                {"relativeValue":76,"type":"Port"},
+                                {"relativeValue":1,"type":"Enclosure"},
+                                {"relativeValue":6,"type":"Bay"}
+                                ]
+                            },
+                            "desiredSpeed":"Auto"
+            }
+                                                    ],
+            "networkUris":
+                [
+                "/rest/ethernet-networks/dad6976e-cc10-4b4b-a181-d8a71b1126ff",
+                "/rest/ethernet-networks/14be9449-c56c-4412-a2ed-c06180e839db"
+                ],
+            "reachability":'null',
+            "primaryPort":'null',
+            "nativeNetworkUri":'null',
+            "mode":"Auto",
+            "name":"x-22-set-set"
+            }
+            ],
       "stackingHealth":'null',
-      "snmpConfiguration":{"type":"snmp-configuration","trapDestinations":'null',"readCommunity":"public","systemContact":"","snmpAccess":'null',"enabled":True,"name":'null',"state":'null',"description":'null',"status":'null',"created":"2017-08-24T20:34:21.340Z","eTag":'null',"modified":"2017-08-24T20:34:21.340Z","category":"snmp-configuration","uri":'null'},
-      "telemetryConfiguration":{"type":"telemetry-configuration","sampleInterval":300,"sampleCount":12,"enableTelemetry":True,"name":'null',"state":'null',"description":'null',"status":'null',"created":"2017-08-24T20:34:21.411Z","eTag":'null',"modified":"2017-08-24T20:34:21.411Z","category":"telemetry-configuration","uri":'null'},
-      "interconnectMapTemplate":{"interconnectMapEntryTemplates":[{"logicalLocation":{"locationEntries":[{"relativeValue":3,"type":"Bay"},{"relativeValue":1,"type":"Enclosure"}]},"enclosureIndex":1,"permittedInterconnectTypeUri":"/rest/interconnect-types/5f411bf3-a253-476c-aeb0-0285c44225c2","logicalDownlinkUri":"/rest/logical-downlinks/9d3bbb46-dcc4-49f9-8e94-5f2ae8611498"},{"logicalLocation":{"locationEntries":[{"relativeValue":1,"type":"Enclosure"},{"relativeValue":6,"type":"Bay"}]},"enclosureIndex":1,"permittedInterconnectTypeUri":"/rest/interconnect-types/5f411bf3-a253-476c-aeb0-0285c44225c2","logicalDownlinkUri":"/rest/logical-downlinks/9d3bbb46-dcc4-49f9-8e94-5f2ae8611498"}]},
-      "qosConfiguration":{"type":"qos-aggregated-configuration","activeQosConfig":{"type":"QosConfiguration","configType":"Passthrough","downlinkClassificationType":'null',"uplinkClassificationType":'null',"qosTrafficClassifiers":'null',"name":'null',"state":'null',"description":'null',"status":'null',"created":'null',"eTag":'null',"modified":'null',"category":"qos-aggregated-configuration","uri":'null'},"inactiveFCoEQosConfig":'null',"inactiveNonFCoEQosConfig":'null',"name":'null',"state":'null',"description":'null',"status":'null',"created":"2017-08-24T20:34:21.340Z","eTag":'null',"modified":"2017-08-24T20:34:21.340Z","category":"qos-aggregated-configuration","uri":'null'},
+      "snmpConfiguration":
+        {
+        "type":"snmp-configuration",
+        "trapDestinations":'null',
+        "readCommunity":"public",
+        "systemContact":"",
+        "snmpAccess":'null',
+        "enabled":True,
+        "name":'null',
+        "state":'null',
+        "description":'null',
+        "status":'null',
+        "created":"2017-08-24T20:34:21.340Z",
+        "eTag":'null',"modified":"2017-08-24T20:34:21.340Z",
+        "category":"snmp-configuration",
+        "uri":'null'
+        },
+      "telemetryConfiguration":
+        {
+            "type":"telemetry-configuration",
+            "sampleInterval":300,
+            "sampleCount":12,
+            "enableTelemetry":True,
+            "name":'null',
+            "state":'null',
+            "description":'null',
+            "status":'null',
+            "created":"2017-08-24T20:34:21.411Z",
+            "eTag":'null',
+            "modified":"2017-08-24T20:34:21.411Z",
+            "category":"telemetry-configuration",
+            "uri":'null'
+        },
+      "interconnectMapTemplate":
+        {
+            "interconnectMapEntryTemplates":
+                [
+                    {
+                    "logicalLocation":
+                        {
+                        "locationEntries":
+                            [
+                            {"relativeValue":3,"type":"Bay"},
+                            {"relativeValue":1,"type":"Enclosure"}
+                            ]
+                        },
+                    "enclosureIndex":1,
+                    "permittedInterconnectTypeUri":"/rest/interconnect-types/5f411bf3-a253-476c-aeb0-0285c44225c2",
+                    "logicalDownlinkUri":"/rest/logical-downlinks/9d3bbb46-dcc4-49f9-8e94-5f2ae8611498"
+                    },
+                    {
+                    "logicalLocation":
+                        {
+                        "locationEntries":
+                            [
+                            {"relativeValue":1,"type":"Enclosure"},
+                            {"relativeValue":6,"type":"Bay"}
+                            ]
+                        },
+                    "enclosureIndex":1,
+                    "permittedInterconnectTypeUri":"/rest/interconnect-types/5f411bf3-a253-476c-aeb0-0285c44225c2",
+                    "logicalDownlinkUri":"/rest/logical-downlinks/9d3bbb46-dcc4-49f9-8e94-5f2ae8611498"
+                    }
+                ]
+        },
+      "qosConfiguration":
+        {
+            "type":"qos-aggregated-configuration",
+            "activeQosConfig":
+                {
+                    "type":"QosConfiguration",
+                    "configType":"Passthrough",
+                    "downlinkClassificationType":'null',
+                    "uplinkClassificationType":'null',
+                    "qosTrafficClassifiers":'null',
+                    "name":'null',
+                    "state":'null',
+                    "description":'null',
+                    "status":'null',
+                    "created":'null',
+                    "eTag":'null',
+                    "modified":'null',
+                    "category":"qos-aggregated-configuration",
+                    "uri":'null
+                '},
+            "inactiveFCoEQosConfig":'null',
+            "inactiveNonFCoEQosConfig":'null',
+            "name":'null',
+            "state":'null',
+            "description":'null',
+            "status":'null',
+            "created":"2017-08-24T20:34:21.340Z",
+            "eTag":'null',
+            "modified":"2017-08-24T20:34:21.340Z",
+            "category":"qos-aggregated-configuration",
+            "uri":'null'
+        },
       "internalNetworkUris":[],
       "enclosureIndexes":[1],
       "redundancyType":"Redundant",
-      "ethernetSettings":{"type":"EthernetInterconnectSettingsV201","lldpIpv6Address":"","lldpIpv4Address":"","interconnectType":"Ethernet","enableIgmpSnooping":True,"igmpIdleTimeoutInterval":260,"enableFastMacCacheFailover":True,"macRefreshInterval":5,"enableNetworkLoopProtection":True,"enablePauseFloodProtection":True,"enableRichTLV":False,"enableTaggedLldp":True,"dependentResourceUri":"/rest/logical-interconnect-groups/1f88c930-5403-46a1-a68e-d9648c213e21","name":"name262286835-1503606861335","id":"55881fad-c21f-4841-85d6-53c46ae7a6dd","state":'null',"description":'null',"status":'null',"created":"2017-08-24T20:34:21.335Z","eTag":'null',"modified":"2017-08-24T20:34:21.335Z","category":'null',"uri":"/rest/logical-interconnect-groups/1f88c930-5403-46a1-a68e-d9648c213e21/ethernetSettings"},
+      "ethernetSettings":
+        {
+            "type":"EthernetInterconnectSettingsV201",
+            "lldpIpv6Address":"",
+            "lldpIpv4Address":"",
+            "interconnectType":"Ethernet",
+            "enableIgmpSnooping":True,
+            "igmpIdleTimeoutInterval":260,
+            "enableFastMacCacheFailover":True,
+            "macRefreshInterval":5,
+            "enableNetworkLoopProtection":True,
+            "enablePauseFloodProtection":True,
+            "enableRichTLV":False,
+            "enableTaggedLldp":True,
+            "dependentResourceUri":"/rest/logical-interconnect-groups/1f88c930-5403-46a1-a68e-d9648c213e21",
+            "name":"name262286835-1503606861335",
+            "id":"55881fad-c21f-4841-85d6-53c46ae7a6dd",
+            "state":'null',
+            "description":'null',
+            "status":'null',
+            "created":"2017-08-24T20:34:21.335Z",
+            "eTag":'null',
+            "modified":"2017-08-24T20:34:21.335Z",
+            "category":'null',
+            "uri":"/rest/logical-interconnect-groups/1f88c930-5403-46a1-a68e-d9648c213e21/ethernetSettings"
+        },
       "interconnectBaySet":3,
       "fabricUri":"/rest/fabrics/a4ab21c2-b121-4801-aacf-746b5576bb1a",
       "stackingMode":'null',
@@ -100,8 +267,12 @@ print len(x)
 z = y['uplinkSets']
 #print json.dumps(y,sort_keys=True, indent=4)
 
-vlans.insert(r)
-ligs.insert(y)
+#vlans.insert(r)
+#ligs.insert(y)
+
+ligs.find()
+
+for connect in
 
 print 'Records inserted:'
 
@@ -113,7 +284,3 @@ for record in lig_data:
 
 for record in vlan_data:
   print record
-
-
-
-

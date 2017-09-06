@@ -61,6 +61,13 @@ def callback(ch, method, properties, body):
     msg = json.loads(record)
     resource = msg['resource']
 
+    '''
+    at this point 'resource' is a JSON string that can be used
+    as needed. This script looks at the category type and acts accordingly.
+    'monogo' just takes the whole JSON string 'resource' and saves it as a
+    'momgo' document
+    '''
+
     # Write vlan updates
 
     if resource['category'] == 'ethernet-networks':

@@ -1,4 +1,6 @@
 # Running the application
+MUST BE RUN IN A DOCKER CONTAINER
+
 
                   _     _                _                                      _            _                                    _     _
   /\/\  _   _ ___| |_  | |__   ___    __| | ___  _ __   ___    ___  _ __     __| | ___   ___| | _____ _ __   _ __ ___   __ _  ___| |__ (_)_ __   ___
@@ -45,23 +47,18 @@ Once those two commands have run one time:
 
 
 # To access mongodb
-- Find the docker web container name and run: `docker exec -it spymongo_reader mongo`
-  docker exec -it spy-db bash
+- Run: `docker exec -it spy-db bash`
+
   Once at the container shell type: mongo
   You will be inside the mongo database
 
-  Mongo commands
+  Mongo commands:
   show dbs
   use<db_name>
   show collections
-  db.<collection-name>.count()
+  db.<collection-name>.count()  print number of records
   db.<collection-name>.find()   prints table
 
 
-# To run tests
-- Find the docker web container name and run: `docker exec -it spymongo_reader python tests.py`
-
 # Gets into the shell of the app container
-docker exec -it (reader container) bash
-
-
+docker exec -it spymongo_reader bash
