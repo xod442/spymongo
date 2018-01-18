@@ -1,5 +1,5 @@
 # Running the application
-MUST BE RUN IN A DOCKER CONTAINER
+MUST BE RUN ON A DOCKER SERVER!!!!
 
 # This application reads information from HPE OneView and stores it in a mongo database
 # for use with opther applications like spyfront
