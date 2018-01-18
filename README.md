@@ -24,7 +24,7 @@ appliance.
 
 NOTE!!!!!The .pem files in the repository and they are mine. They will not work. Remove them or overwrite them.
 
-For Example: assuming, you have a brand new HPE OneView appliance invocation ould be similar to this:
+For Example: assuming, you have a brand new HPE OneView appliance invocation could be similar to this:
 
 # Generate the RabbitMQ keypair on the appliance
 
