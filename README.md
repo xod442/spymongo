@@ -53,11 +53,11 @@ Once those two commands have run one time:
   You will be inside the mongo database
 
   Mongo commands:
-  -show dbs
-  -use<db_name>
-  -show collections
-  -db.<collection-name>.count()  print number of records
-  -db.<collection-name>.find()   prints table
+  - show dbs
+  - use<db_name>
+  - show collections
+  - db.<collection-name>.count()  print number of records
+  - db.<collection-name>.find()   prints table
 
 
 # Gets into the shell of the app container
