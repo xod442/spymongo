@@ -10,9 +10,9 @@ MUST BE RUN IN A DOCKER CONTAINER
 
 - Checkout code on https://github.com/xod442/spymongo.git save it on the /opt directory on your docker machine.
 
-`       cd /opt
-`       git clone https://github.com/xod442/spymongo.git
-`       cd spymongo
+       - cd /opt
+       - git clone https://github.com/xod442/spymongo.git
+       - cd spymongo
 
 -In order for spymongo.py to register and listen on the SCMB a couple of things need to happen first.
 
