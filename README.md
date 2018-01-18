@@ -28,11 +28,11 @@ For Example: assuming, you have a brand new HPE OneView appliance invocation cou
 
 # Generate the RabbitMQ keypair on the appliance
 
-  ./scmb.py -a [HPE OneView Appliance IP] -u Administrator -p MyPass -g    # My pass is for oneView
+  ./scmb.py -a [HPE OneView Appliance IP] -u Administrator -p MyPass -g    # user and pass are for oneView
 
 # Download the SSL key and certificate
 
-  ./scmb.py -a [HPE OneView Appliance IP] -u Administrator -p MyPass -d    # MyPass is for oneView
+  ./scmb.py -a [HPE OneView Appliance IP] -u Administrator -p MyPass -d    # user and pass are for oneView
 
 Once those two commands have run one time:
 
