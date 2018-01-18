@@ -1,7 +1,8 @@
 # Running the application
 MUST BE RUN IN A DOCKER CONTAINER
 
-
+# This application reads information from HPE OneView and stores it in a mongo database
+# for use with opther applications like spyfront
                   _     _                _                                      _            _                                    _     _
   /\/\  _   _ ___| |_  | |__   ___    __| | ___  _ __   ___    ___  _ __     __| | ___   ___| | _____ _ __   _ __ ___   __ _  ___| |__ (_)_ __   ___
  /    \| | | / __| __| | '_ \ / _ \  / _` |/ _ \| '_ \ / _ \  / _ \| '_ \   / _` |/ _ \ / __| |/ / _ \ '__| | '_ ` _ \ / _` |/ __| '_ \| | '_ \ / _ \
